@@ -21,7 +21,7 @@ public class contacts {
         contactInfo.put("Casey F ", "237-7897");
 
 //        Files.write(contactPath, (Iterable<? extends CharSequence>) contactNames);
-        File file = new File(String.valueOf(contacts));
+        File contactFile = new File(String.valueOf(contacts));
 
         BufferedWriter bf = null;
 
@@ -29,7 +29,7 @@ public class contacts {
         try {
 
             //create new BufferedWriter for the output file
-            bf = new BufferedWriter(new FileWriter(file));
+            bf = new BufferedWriter(new FileWriter(contactFile));
 
             //iterate map entries
             for (Map.Entry<String, String> entry : contactInfo.entrySet()) {
