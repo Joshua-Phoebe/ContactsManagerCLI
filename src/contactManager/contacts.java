@@ -4,9 +4,10 @@ import java.io.*;
 import java.nio.file.Files;
 import java.util.*;
 
-public class contacts {
 
-    public static void main(String[] args) throws IOException {
+
+    public static void main(String[] args) {
+
 
         Options presentOptions = new Options();
         presentOptions.userOptions();
@@ -20,6 +21,7 @@ public class contacts {
 //        String searchName = input.nextLine();
 //       userSearch.searchFile(searchName);
 //        removeContact("Jack");
+
 
     }
 //    public static void removeContact(String lineContent) throws IOException
@@ -36,5 +38,6 @@ public class contacts {
 //
 //
 //    }
+
 
 }
