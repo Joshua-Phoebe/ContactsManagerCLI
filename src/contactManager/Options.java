@@ -29,6 +29,10 @@ public class Options {
             userSearch.searchFile(searchName);
         }else if(response.equalsIgnoreCase("4")) {
             //Delete User
+            Delete deleteContactLine = new Delete();
+            System.out.print("Enter contact to delete : ");
+            String deleteContact = input.nextLine();
+            deleteContactLine.removeContact(deleteContact);
         }else if(response.equalsIgnoreCase("5")){
             //Exit
             System.exit(0);
